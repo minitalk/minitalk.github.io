@@ -297,7 +297,7 @@ function myFunction() {
       //console.log(text)
       document.getElementById("playButton").value = "...";
       document.getElementById("playButton").disabled = true;
-      fetch('https://api.wangperawong.com/audio/synthesize?user_id=0&text='+text)
+      fetch('https://minitalk.wangperawong.com/audio/synthesize?user_id=0&text='+text)
       .then((response) => response.json())
       .then((responseJson) => {
         //console.log(responseJson)
